@@ -6,5 +6,13 @@
         <div>
             <%= @content %>
         </div>
+        <h1>BBS</h1>
+        <ul>
+            <% @comments.each do |comment| %>
+                <li>
+                    <%= comment.id %>: <%= comment/body %>
+                </li>
+            <% end %>
+        </ul>
     </body>
 </html>
