@@ -11,8 +11,6 @@ class Comment < ActiveRecord::Base
 end
 
 get '/' do
-    @title = "Hello"
-    @content = "hoge"
     @comments = Comment.all
     erb :index
 end
